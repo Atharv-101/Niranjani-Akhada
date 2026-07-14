@@ -11754,3 +11754,51 @@ header.main-header .header-sticky.active{
 		margin-top: 20px;
 	}
 }
+/* Guru Tradition Custom Cards */
+.guru-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(211, 84, 0, 0.08);
+    border-top: 4px solid #d35400;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    height: 100%;
+}
+
+.guru-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(211, 84, 0, 0.15);
+}
+
+.guru-icon-box {
+    width: 80px;
+    height: 80px;
+    background: #fffcf5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    border: 2px dashed #f2e6d9;
+}
+
+.guru-icon-box img {
+    width: 40px;
+    height: 40px;
+}
+
+.guru-card-title {
+    font-family: 'Tiro Devanagari Marathi', serif;
+    font-size: 24px;
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+.guru-card-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    margin: 0;
+}
