@@ -82,6 +82,64 @@ without permission is prohibited.
     <link href="css/plyr.css" rel="stylesheet" />
     <!-- मुख्य कस्टम सीएसएस -->
     <link href="css/custom.css" media="screen" rel="stylesheet" />
+
+<!-- Modern Typography and Styling Overrides -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-font: 'Outfit', sans-serif !important;
+        --secondary-font: 'Inter', sans-serif !important;
+        --text-color: #333;
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    body, p, span, li, a {
+        font-family: var(--secondary-font) !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--primary-font) !important;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+    /* Page Header Enhancement */
+    .page-header-box h1 {
+        font-size: 2.8rem;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+    .page-header-box h1 .line, .page-header-box h1 .word, .page-header-box h1 .char {
+        color: #ffffff !important;
+    }
+    /* Fix messy headings generally */
+    .section-title h2 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    /* Clean up general typography */
+    p {
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* Mobile Language Button */
+    .mobile-lang-wrapper {
+        display: none;
+        align-items: center;
+    }
+    @media (max-width: 991px) {
+        .mobile-lang-wrapper {
+            display: flex !important;
+        }
+        .main-header .navbar-toggle {
+            margin-left: 10px;
+        }
+    }
+
+</style>
+
 </head>
 
 <body>
@@ -122,60 +180,57 @@ without permission is prohibited.
                                 <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_6" href="#">संत एवं
                                         महंत</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_7"
-                                                href="service-single.html">महामंडलेश्वर</a></li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_8"
-                                                href="blog-single.html">महंत</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_7" href="Swami-Kailashanand-Giri-Jii.html">महामंडलेश्वर</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="Mahant-Ravinder-Puri.html">महंत</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_9"
-                                                href="sermons.html">Sermons</a></li>
+                                                href="#">Sermons</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_10"
-                                                href="sermon-single.html">Sermon
+                                                href="#">Sermon
                                                 Details</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_11"
-                                                href="ministries.html">Our
+                                                href="#">Our
                                                 Ministries</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_12"
-                                                href="ministry-single.html">Ministry
+                                                href="#">Ministry
                                                 Details</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_13"
-                                                href="pastor.html">Pastor</a></li>
+                                                href="#">Pastor</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_14"
-                                                href="pastor-single.html">Pastor
+                                                href="#">Pastor
                                                 Details</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_15"
-                                                href="testimonials.html">Testimonials</a></li>
+                                                href="#">Testimonials</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_16"
-                                                href="image-gallery.html">Image
+                                                href="#">Image
                                                 Gallery</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_17"
-                                                href="video-gallery.html">Video
+                                                href="#">Video
                                                 Gallery</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_18"
-                                                href="faqs.html">FAQs</a></li>
+                                                href="#">FAQs</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_19"
-                                                href="404.html">404</a></li>
+                                                href="#">404</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="#">अखाड़े
+                                <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="history.html">अखाड़े
                                         की शाखाएँ</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_21"
-                                                href="service-single.html">देशभर की
+                                                href="guru_tradition.html">देशभर की
                                                 शाखाएँ</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_8"
-                                                href="blog-single.html">महंत</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="Mahant-Ravinder-Puri.html">महंत</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_22"
-                                                href="sermons.html">अखाड़े की
+                                                href="#">अखाड़े की
                                                 शाखाएँ</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_23"
-                                                href="sermon-single.html">हमारी
+                                                href="#">हमारी
                                                 शाखाएँ</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_24"
-                                                href="ministries.html">शाखा केंद्र</a>
+                                                href="madhiyas.html">शाखा केंद्र</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -183,17 +238,15 @@ without permission is prohibited.
                                         href="#">गतिविधियाँ</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_26"
-                                                href="service-single.html">कार्यक्रम</a></li>
+                                                href="#">कार्यक्रम</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_27"
-                                                href="blog-single.html">कुंभ मेला</a>
+                                                href="#">कुंभ मेला</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_28"
-                                                href="sermons.html">चित्रावली</a></li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_29"
-                                                href="sermon-single.html">समाचार</a>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_28" href="gallery.html">चित्रावली</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_29" href="news.html">समाचार</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_30"
-                                                href="ministries.html">दान</a></li>
+                                                href="#">दान</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -418,7 +471,7 @@ without permission is prohibited.
                                     <!-- Tradition मद Start -->
                                     <div class="service-item">
                                         <div class="service-item-image">
-                                            <a data-cursor-text="View" href="service-single.html">
+                                            <a data-cursor-text="View" href="#">
                                                 <figure class="image-anime">
                                                     <img alt="" src="images/guru.jpg" />
                                                 </figure>
@@ -442,7 +495,7 @@ without permission is prohibited.
                                     <!-- Tradition मद Start -->
                                     <div class="service-item">
                                         <div class="service-item-image">
-                                            <a data-cursor-text="View" href="service-single.html">
+                                            <a data-cursor-text="View" href="#">
                                                 <figure class="image-anime">
                                                     <img alt="" src="images/om-image.jpg" />
                                                 </figure>
@@ -466,7 +519,7 @@ without permission is prohibited.
                                     <!-- Tradition मद Start -->
                                     <div class="service-item">
                                         <div class="service-item-image">
-                                            <a data-cursor-text="View" href="service-single.html">
+                                            <a data-cursor-text="View" href="#">
                                                 <figure class="image-anime">
                                                     <img alt="" src="images/snan.jpg" />
                                                 </figure>
@@ -551,7 +604,7 @@ without permission is prohibited.
                         <div class="our-mission-footer wow fadeInUp" data-wow-delay="0.6s">
                             <!-- Guru Tradition Button Start -->
                             <div class="mission-btn">
-                                <a class="btn-default" data-i18n="auto_key_67" href="contact.html">गुरु परंपरा जानें</a>
+                                <a class="btn-default" data-i18n="auto_key_67" href="#">गुरु परंपरा जानें</a>
                             </div>
                             <!-- Guru Tradition Button End -->
                         </div>
@@ -606,7 +659,7 @@ without permission is prohibited.
                                                 आध्यात्मिक साधना और गुरु-भक्ति का मार्ग।</p>
                                         </div>
                                         <div class="interactive-process-item-btn">
-                                            <a class="readmore-btn" data-i18n="auto_key_70" href="contact.html">अधिक
+                                            <a class="readmore-btn" data-i18n="auto_key_70" href="#">अधिक
                                                 जानें</a>
                                         </div>
                                     </div>
@@ -631,7 +684,7 @@ without permission is prohibited.
                                                 परंपरा एवं वर्तमान आचार्य गुरु की गौरवशाली परंपरा.</p>
                                         </div>
                                         <div class="interactive-process-item-btn">
-                                            <a class="readmore-btn" data-i18n="auto_key_70" href="contact.html">अधिक
+                                            <a class="readmore-btn" data-i18n="auto_key_70" href="#">अधिक
                                                 जानें</a>
                                         </div>
                                     </div>
@@ -656,7 +709,7 @@ without permission is prohibited.
                                                 आध्यात्मिक महत्व एवं अखाड़े की गौरवशाली परंपरा।</p>
                                         </div>
                                         <div class="interactive-process-item-btn">
-                                            <a class="readmore-btn" data-i18n="auto_key_70" href="contact.html">अधिक
+                                            <a class="readmore-btn" data-i18n="auto_key_70" href="#">अधिक
                                                 जानें</a>
                                         </div>
                                     </div>
@@ -727,7 +780,7 @@ without permission is prohibited.
                     <!-- Heritage मद Start -->
                     <div class="sermons-item wow fadeInUp">
                         <div class="sermons-item-image">
-                            <a data-cursor-text="View" href="sermon-single.html">
+                            <a data-cursor-text="View" href="#">
                                 <figure class="image-anime">
                                     <img alt="" src="images/niranjani-akhada.jpg" />
                                 </figure>
@@ -735,7 +788,7 @@ without permission is prohibited.
                         </div>
                         <div class="sermons-item-body">
                             <div class="sermons-item-content">
-                                <h2><a data-i18n="auto_key_78" href="sermon-single.html">सात
+                                <h2><a data-i18n="auto_key_78" href="#">सात
                                         अखाड़े</a></h2>
                                 <ul>
                                     <li><span data-i18n="auto_key_79">शैव संन्यासी परंपरा के सात
@@ -743,7 +796,7 @@ without permission is prohibited.
                                 </ul>
                             </div>
                             <div class="sermons-item-btn">
-                                <a class="readmore-btn" data-i18n="auto_key_80" href="sermon-single.html">Read More</a>
+                                <a class="readmore-btn" data-i18n="auto_key_80" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -753,7 +806,7 @@ without permission is prohibited.
                     <!-- Heritage मद Start -->
                     <div class="sermons-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="sermons-item-image">
-                            <a data-cursor-text="View" href="sermon-single.html">
+                            <a data-cursor-text="View" href="#">
                                 <figure class="image-anime">
                                     <img alt="" src="images/waking-sadhu.jpg" />
                                 </figure>
@@ -761,7 +814,7 @@ without permission is prohibited.
                         </div>
                         <div class="sermons-item-body">
                             <div class="sermons-item-content">
-                                <h2><a data-i18n="auto_key_81" href="sermon-single.html">18
+                                <h2><a data-i18n="auto_key_81" href="#">18
                                         मढ़ियाँ</a></h2>
                                 <ul>
                                     <li><span data-i18n="auto_key_82">देशभर में स्थापित अठारह
@@ -769,7 +822,7 @@ without permission is prohibited.
                                 </ul>
                             </div>
                             <div class="sermons-item-btn">
-                                <a class="readmore-btn" data-i18n="auto_key_80" href="sermon-single.html">Read More</a>
+                                <a class="readmore-btn" data-i18n="auto_key_80" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -779,7 +832,7 @@ without permission is prohibited.
                     <!-- Heritage मद Start -->
                     <div class="sermons-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="sermons-item-image">
-                            <a data-cursor-text="View" href="sermon-single.html">
+                            <a data-cursor-text="View" href="#">
                                 <figure class="image-anime">
                                     <img alt="" src="images/ved.jpg" />
                                 </figure>
@@ -787,7 +840,7 @@ without permission is prohibited.
                         </div>
                         <div class="sermons-item-body">
                             <div class="sermons-item-content">
-                                <h2><a data-i18n="auto_key_83" href="sermon-single.html">चार
+                                <h2><a data-i18n="auto_key_83" href="#">चार
                                         महावाक्य</a></h2>
                                 <ul>
                                     <li><span data-i18n="auto_key_84">अहं ब्रह्मास्मि •
@@ -795,7 +848,7 @@ without permission is prohibited.
                                 </ul>
                             </div>
                             <div class="sermons-item-btn">
-                                <a class="readmore-btn" data-i18n="auto_key_80" href="sermon-single.html">Read More</a>
+                                <a class="readmore-btn" data-i18n="auto_key_80" href="#">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -838,7 +891,7 @@ without permission is prohibited.
                             </div>
                             <div class="event-image-info-btn">
                                 <a class="btn-default btn-highlighted" data-i18n="auto_key_88"
-                                    href="kailash-ji.html">जानें</a>
+                                    href="Swami-Kailashanand-Giri-Jii.html">जानें</a>
                             </div>
                         </div>
                         <!-- घटनाएँ Image Info Box End -->
@@ -887,7 +940,7 @@ without permission is prohibited.
                         <!-- Quote Item List End -->
                         <!-- Quote Content Button Start -->
                         <div class="event-content-btn wow fadeInUp" data-wow-delay="0.8s">
-                            <a class="btn-default" data-i18n="auto_key_96" href="contact.html">संदेश पढ़ें</a>
+                            <a class="btn-default" data-i18n="auto_key_96" href="Swami-Kailashanand-Giri-Jii.html">संदेश पढ़ें</a>
                         </div>
                         <!-- Quote Content Button End -->
                     </div>
@@ -922,7 +975,7 @@ without permission is prohibited.
                                     <!-- Knowledge मद Start -->
                                     <div class="ministries-item">
                                         <div class="ministries-item-image">
-                                            <a data-cursor-text="View" href="ministry-single.html">
+                                            <a data-cursor-text="View" href="#">
                                                 <figure>
                                                     <img alt="" src="images/12jyotirling.jpg" />
                                                 </figure>
@@ -930,14 +983,14 @@ without permission is prohibited.
                                         </div>
                                         <div class="ministries-item-body">
                                             <div class="ministries-item-content">
-                                                <h2><a data-i18n="auto_key_98" href="ministry-single.html">द्वादश
+                                                <h2><a data-i18n="auto_key_98" href="#">द्वादश
                                                         ज्योतिर्लिंग</a></h2>
                                                 <p data-i18n="auto_key_99">भगवान शिव को समर्पित बारह ज्योतिर्लिंग भारत
                                                     की आध्यात्मिक चेतना के केंद्र हैं।</p>
                                             </div>
                                             <div class="ministries-item-btn">
                                                 <a class="readmore-btn" data-i18n="auto_key_80"
-                                                    href="ministry-single.html">Read More</a>
+                                                    href="#">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -949,7 +1002,7 @@ without permission is prohibited.
                                     <!-- Knowledge मद Start -->
                                     <div class="ministries-item">
                                         <div class="ministries-item-image">
-                                            <a data-cursor-text="View" href="ministry-single.html">
+                                            <a data-cursor-text="View" href="#">
                                                 <figure>
                                                     <img alt="" src="images/Mathura.jpg" />
                                                 </figure>
@@ -958,13 +1011,13 @@ without permission is prohibited.
                                         <div class="ministries-item-body">
                                             <div class="ministries-item-content">
                                                 <h2><a data-i18n="auto_key_100"
-                                                        href="ministry-single.html">सप्तमोक्षदायिका पुरी</a></h2>
+                                                        href="#">सप्तमोक्षदायिका पुरी</a></h2>
                                                 <p data-i18n="auto_key_101">अयोध्या, मथुरा, माया, काशी, कांची, अवन्तिका
                                                     एवं द्वारका का धार्मिक महत्व।</p>
                                             </div>
                                             <div class="ministries-item-btn">
                                                 <a class="readmore-btn" data-i18n="auto_key_80"
-                                                    href="ministry-single.html">Read More</a>
+                                                    href="#">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -976,7 +1029,7 @@ without permission is prohibited.
                                     <!-- Knowledge मद Start -->
                                     <div class="ministries-item">
                                         <div class="ministries-item-image">
-                                            <a data-cursor-text="View" href="ministry-single.html">
+                                            <a data-cursor-text="View" href="#">
                                                 <figure>
                                                     <img alt="" src="images/12.jpg" />
                                                 </figure>
@@ -984,14 +1037,14 @@ without permission is prohibited.
                                         </div>
                                         <div class="ministries-item-body">
                                             <div class="ministries-item-content">
-                                                <h2><a data-i18n="auto_key_102" href="ministry-single.html">पंचकन्या</a>
+                                                <h2><a data-i18n="auto_key_102" href="#">पंचकन्या</a>
                                                 </h2>
                                                 <p data-i18n="auto_key_103">अहल्या, द्रौपदी, सीता, तारा एवं मन्दोदरी के
                                                     स्मरण का महत्व।</p>
                                             </div>
                                             <div class="ministries-item-btn">
                                                 <a class="readmore-btn" data-i18n="auto_key_80"
-                                                    href="ministry-single.html">Read More</a>
+                                                    href="#">Read More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1037,8 +1090,8 @@ without permission is prohibited.
                             <h1 class="text-anime-style-3" data-cursor="-opaque" data-i18n="auto_key_106">श्री महंत
                                 रविन्द्रपुरी महाराज</h1> <br /><br />
                             <h4 class="text-anime-style-3" data-i18n="auto_key_107" data-wow-delay="0.2s"
-                                style="color: azure;">सचिव – पंचायती
-                                अखाड़ा श्री निरंजनी<br />
+                                style="color: azure;">
+                                अध्यक्ष – पंचायती अखाड़ा श्री निरंजनी<br><br>
                                 अध्यक्ष – मनसा देवी मंदिर ट्रस्ट, हरिद्वार</h4>
                             <p class="wow fadeInUp" data-i18n="auto_key_108" data-wow-delay="0.4s"
                                 style="color: azure;">श्री महंत रविन्द्रपुरी
@@ -1051,7 +1104,7 @@ without permission is prohibited.
                         <!-- Section Title End -->
                         <!-- CTA Content Button Start -->
                         <div class="cta-content-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a class="btn-default btn-highlighted" data-i18n="auto_key_109" href="contact.html">और
+                            <a class="btn-default btn-highlighted" data-i18n="auto_key_109" href="Mahant-Ravinder-Puri.html">और
                                 जानें</a>
                         </div>
                         <!-- CTA Content Button End -->
@@ -1083,7 +1136,7 @@ without permission is prohibited.
                         <!-- Section Title End -->
                         <!-- Akhada Content Button Start -->
                         <div class="testimonial-content-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a class="btn-default" data-i18n="auto_key_113" href="testimonials.html">View All
+                            <a class="btn-default" data-i18n="auto_key_113" href="#">View All
                                 Stories</a>
                         </div>
                         <!-- Akhada Content Button End -->
@@ -1555,7 +1608,7 @@ without permission is prohibited.
                     <!-- पोस्ट Item Start -->
                     <div class="post-item wow fadeInUp">
                         <div class="post-item-image">
-                            <a data-cursor-text="View" href="blog-single.html">
+                            <a data-cursor-text="View" href="#">
                                 <figure class="image-anime">
                                     <img alt="" src="images/waking-sadhu.jpg" />
                                 </figure>
@@ -1563,13 +1616,13 @@ without permission is prohibited.
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a data-i18n="auto_key_95" href="blog-single.html">दशनामी संन्यास परंपरा</a></h2>
+                                <h2><a data-i18n="auto_key_95" href="#">दशनामी संन्यास परंपरा</a></h2>
                                 <br />
                                 <p data-i18n="auto_key_154">आदि शंकराचार्य द्वारा स्थापित दशनामी संन्यास परंपरा भारतीय
                                     आध्यात्मिक जीवन, वैदिक ज्ञान एवं सन्यास धर्म की आधारशिला है। </p>
                             </div>
                             <div class="post-item-btn">
-                                <a class="readmore-btn" data-i18n="auto_key_155" href="blog-single.html">और जानें</a>
+                                <a class="readmore-btn" data-i18n="auto_key_155" href="#">और जानें</a>
                             </div>
                         </div>
                     </div>
@@ -1579,7 +1632,7 @@ without permission is prohibited.
                     <!-- पोस्ट Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="post-item-image">
-                            <a data-cursor-text="View" href="blog-single.html">
+                            <a data-cursor-text="View" href="#">
                                 <figure class="image-anime">
                                     <img alt="" src="images/juna-akhada.jpg" />
                                 </figure>
@@ -1587,13 +1640,13 @@ without permission is prohibited.
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a data-i18n="auto_key_156" href="blog-single.html">अखाड़ों का इतिहास</a></h2>
+                                <h2><a data-i18n="auto_key_156" href="#">अखाड़ों का इतिहास</a></h2>
                                 <br />
                                 <p data-i18n="auto_key_157">भारतीय संत परंपरा में अखाड़ों की स्थापना धर्म रक्षा,
                                     आध्यात्मिक साधना तथा वैदिक संस्कृति के संरक्षण के उद्देश्य से हुई। </p>
                             </div>
                             <div class="post-item-btn">
-                                <a class="readmore-btn" data-i18n="auto_key_155" href="blog-single.html">और जानें</a>
+                                <a class="readmore-btn" data-i18n="auto_key_155" href="#">और जानें</a>
                             </div>
                         </div>
                     </div>
@@ -1603,7 +1656,7 @@ without permission is prohibited.
                     <!-- पोस्ट Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="post-item-image">
-                            <a data-cursor-text="View" href="blog-single.html">
+                            <a data-cursor-text="View" href="#">
                                 <figure class="image-anime">
                                     <img alt="" src="images/ved.jpg" />
                                 </figure>
@@ -1611,13 +1664,13 @@ without permission is prohibited.
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a data-i18n="auto_key_158" href="blog-single.html">गुरु–शिष्य परंपरा</a></h2>
+                                <h2><a data-i18n="auto_key_158" href="#">गुरु–शिष्य परंपरा</a></h2>
                                 <br />
                                 <p data-i18n="auto_key_159">गुरु से शिष्य तक ज्ञान, तप, त्याग और धर्म की परंपरा निरंतर
                                     प्रवाहित होती रही है, जो अखाड़े की मूल पहचान है। </p>
                             </div>
                             <div class="post-item-btn">
-                                <a class="readmore-btn" data-i18n="auto_key_155" href="blog-single.html">और जानें</a>
+                                <a class="readmore-btn" data-i18n="auto_key_155" href="#">और जानें</a>
                             </div>
                         </div>
                     </div>
@@ -1691,10 +1744,10 @@ without permission is prohibited.
                                 <li><a data-i18n="auto_key_165" href="index.html">मुखपृष्ठ</a></li>
                                 <li><a data-i18n="auto_key_166" href="about.html"> हमारे बारे में</a>
                                 </li>
-                                <li><a data-i18n="auto_key_3" href="ministries.html"> इतिहास</a></li>
-                                <li><a data-i18n="auto_key_42" href="sermons.html"> गुरु परंपरा</a>
+                                <li><a data-i18n="auto_key_3" href="#"> इतिहास</a></li>
+                                <li><a data-i18n="auto_key_42" href="#"> गुरु परंपरा</a>
                                 </li>
-                                <li><a data-i18n="auto_key_5" href="contact.html">
+                                <li><a data-i18n="auto_key_5" href="#">
                                         मढ़ियाँ</a></li>
                                 <li><a data-i18n="auto_key_167" href="index.html"> शाखाएँ</a></li>
                                 <li><a data-i18n="auto_key_168" href="about.html"> कुंभ पर्व</a>
@@ -1706,15 +1759,15 @@ without permission is prohibited.
                         <div class="footer-links footer-service-links">
                             <h2 data-i18n="auto_key_169">Our Services</h2>
                             <ul>
-                                <li><a data-i18n="auto_key_170" href="service-single.html"> श्री गुरु निरंजन देव
+                                <li><a data-i18n="auto_key_170" href="#"> श्री गुरु निरंजन देव
                                         स्तुति</a></li>
-                                <li><a data-i18n="auto_key_171" href="service-single.html"> चार महावाक्य</a></li>
-                                <li><a data-i18n="auto_key_172" href="service-single.html"> सप्त मोक्षदायिनी पुरियाँ</a>
+                                <li><a data-i18n="auto_key_171" href="#"> चार महावाक्य</a></li>
+                                <li><a data-i18n="auto_key_172" href="#"> सप्त मोक्षदायिनी पुरियाँ</a>
                                 </li>
-                                <li><a data-i18n="auto_key_173" href="service-single.html"> द्वादश ज्योतिर्लिंग</a></li>
-                                <li><a data-i18n="auto_key_174" href="service-single.html"> गुरुकार्तिकेय स्तोत्र</a>
+                                <li><a data-i18n="auto_key_173" href="#"> द्वादश ज्योतिर्लिंग</a></li>
+                                <li><a data-i18n="auto_key_174" href="#"> गुरुकार्तिकेय स्तोत्र</a>
                                 </li>
-                                <li><a data-i18n="auto_key_175" href="service-single.html"> सप्त चिरंजीवी मंत्र</a></li>
+                                <li><a data-i18n="auto_key_175" href="#"> सप्त चिरंजीवी मंत्र</a></li>
                             </ul>
                         </div>
                         <!-- फ़ुटर Links ख़त्म -->

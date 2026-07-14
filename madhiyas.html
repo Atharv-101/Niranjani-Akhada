@@ -44,6 +44,64 @@
     <link href="css/plyr.css" rel="stylesheet" />
     <!-- मुख्य कस्टम सीएसएस -->
     <link href="css/custom.css" media="screen" rel="stylesheet" />
+
+<!-- Modern Typography and Styling Overrides -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-font: 'Outfit', sans-serif !important;
+        --secondary-font: 'Inter', sans-serif !important;
+        --text-color: #333;
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    body, p, span, li, a {
+        font-family: var(--secondary-font) !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--primary-font) !important;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+    /* Page Header Enhancement */
+    .page-header-box h1 {
+        font-size: 2.8rem;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+    .page-header-box h1 .line, .page-header-box h1 .word, .page-header-box h1 .char {
+        color: #ffffff !important;
+    }
+    /* Fix messy headings generally */
+    .section-title h2 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    /* Clean up general typography */
+    p {
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* Mobile Language Button */
+    .mobile-lang-wrapper {
+        display: none;
+        align-items: center;
+    }
+    @media (max-width: 991px) {
+        .mobile-lang-wrapper {
+            display: flex !important;
+        }
+        .main-header .navbar-toggle {
+            margin-left: 10px;
+        }
+    }
+
+</style>
+
 </head>
 <body>
 
@@ -77,29 +135,27 @@
                                         बारे में</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" data-i18n="auto_key_3"
-                                        href="history.html">इतिहास</a></li>
+                                        href="history.html"><span data-i18n="auto_page_content_39">इतिहास</span></a></li>
                                 <li class="nav-item"><a class="nav-link" data-i18n="auto_key_4"
-                                        href="guru_tradition.html">गुरु परंपरा</a></li>
+                                        href="guru_tradition.html"><span data-i18n="auto_page_content_41">गुरु परंपरा</span></a></li>
                                 <li class="nav-item"><a class="nav-link" data-i18n="auto_key_5"
-                                        href="madhiyas.html">मढ़ियाँ</a></li>
+                                        href="madhiyas.html"><span data-i18n="auto_page_content_2">मढ़ियाँ</span></a></li>
                                 <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_6" href="#">संत एवं
                                         महंत</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_7"
-                                                href="service-single.html">महामंडलेश्वर</a></li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_8"
-                                                href="blog-single.html">महंत</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_7" href="Swami-Kailashanand-Giri-Jii.html">महामंडलेश्वर</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="Mahant-Ravinder-Puri.html">महंत</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="#">अखाड़े
+                                <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="history.html">अखाड़े
                                         की शाखाएँ</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_21"
-                                                href="service-single.html">देशभर की
+                                                href="guru_tradition.html">देशभर की
                                                 शाखाएँ</a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_24"
-                                                href="ministries.html">शाखा केंद्र</a>
+                                                href="madhiyas.html">शाखा केंद्र</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -107,17 +163,15 @@
                                         href="#">गतिविधियाँ</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_26"
-                                                href="service-single.html">कार्यक्रम</a></li>
+                                                href="#">कार्यक्रम</a></li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_27"
-                                                href="blog-single.html">कुंभ मेला</a>
+                                                href="#">कुंभ मेला</a>
                                         </li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_28"
-                                                href="sermons.html">चित्रावली</a></li>
-                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_29"
-                                                href="sermon-single.html">समाचार</a>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_28" href="gallery.html">चित्रावली</a></li>
+                                        <li class="nav-item"><a class="nav-link" data-i18n="auto_key_29" href="news.html"><span data-i18n="auto_page_content_1">समाचार</span></a>
                                         </li>
                                         <li class="nav-item"><a class="nav-link" data-i18n="auto_key_30"
-                                                href="ministries.html">दान</a></li>
+                                                href="#">दान</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -145,8 +199,8 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">मढ़ियाँ</h1>
-                        <p class="text-anime-style-2" style="color: #eee;">श्री पंचायती अखाड़ा श्री निरंजनी की मढ़ियाँ अखाड़े की प्राचीन गुरु-शिष्य परंपरा, आध्यात्मिक साधना तथा संगठनात्मक व्यवस्था की आधारशिला हैं। प्रत्येक मढ़ी अपनी विशिष्ट परंपरा, मर्यादा एवं आध्यात्मिक पहचान के साथ सनातन धर्म के संरक्षण, संत परंपरा के संवर्धन तथा वैदिक संस्कृति के प्रचार-प्रसार में महत्वपूर्ण योगदान देती है। वर्तमान में श्री निरंजनी अखाड़े में कुल 18 मढ़ियाँ विद्यमान हैं, जो अखाड़े की समृद्ध आध्यात्मिक विरासत का प्रतीक हैं.</p>
+                        <h1 class="text-anime-style-3" data-cursor="-opaque"><span data-i18n="auto_page_content_2">मढ़ियाँ</span></h1>
+                        <p class="text-anime-style-2" style="color: #eee;">श्री पंचायती अखाड़ा श्री निरंजनी की <span data-i18n="auto_page_content_2">मढ़ियाँ</span> अखाड़े की प्राचीन <span data-i18n="auto_page_content_49">गुरु-शिष्य परंपरा</span>, आध्यात्मिक साधना तथा संगठनात्मक व्यवस्था की आधारशिला हैं। प्रत्येक मढ़ी अपनी विशिष्ट परंपरा, मर्यादा एवं आध्यात्मिक पहचान के साथ सनातन धर्म के संरक्षण, संत परंपरा के संवर्धन तथा वैदिक संस्कृति के प्रचार-प्रसार में महत्वपूर्ण योगदान देती है। वर्तमान में श्री निरंजनी अखाड़े में कुल 18 <span data-i18n="auto_page_content_2">मढ़ियाँ</span> विद्यमान हैं, जो अखाड़े की समृद्ध <span data-i18n="auto_page_content_53">आध्यात्मिक विरासत</span> का प्रतीक हैं.</p>
                     </div>
                     <!-- Page Header Box End -->
                 </div>
@@ -164,7 +218,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/01.jpg" alt="">
                                 </figure>
@@ -172,10 +226,10 @@
                         </div>
                         <div class="post-item-body">                           
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">राजावत मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_4">राजावत मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>श्री पंचायती अखाड़ा श्री निरंजनी की प्रमुख परंपरागत मढ़ियों में से एक।</p>
+                                <p><span data-i18n="auto_page_content_5">श्री पंचायती अखाड़ा श्री निरंजनी की प्रमुख परंपरागत मढ़ियों में से एक।</span></p>
                             </div>
                         </div>
                     </div>
@@ -186,7 +240,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/02.jpg" alt="">
                                 </figure>
@@ -194,10 +248,10 @@
                         </div>
                         <div class="post-item-body">                        
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">राजावत मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_4">राजावत मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>राजावत परंपरा की यह दूसरी मढ़ी अखाड़े की धार्मिक एवं आध्यात्मिक परंपराओं को आगे बढ़ाने तथा संतों के संगठन को सुदृढ़ बनाने में योगदान देती है।</p>
+                                <p><span data-i18n="auto_page_content_6">राजावत परंपरा की यह दूसरी मढ़ी अखाड़े की धार्मिक एवं आध्यात्मिक परंपराओं को आगे बढ़ाने तथा संतों के संगठन को सुदृढ़ बनाने में योगदान देती है।</span></p>
                             </div>
                         </div>
                     </div>
@@ -208,7 +262,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/guru.jpg" alt="">
                                 </figure>
@@ -216,10 +270,10 @@
                         </div>
                         <div class="post-item-body">                        
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">दुर्गानाथी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_7">दुर्गानाथी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>गुरु-शिष्य परंपरा एवं संन्यास परंपरा को आगे बढ़ाने वाली प्रतिष्ठित मढ़ी।</p>
+                                <p><span data-i18n="auto_page_content_8"><span data-i18n="auto_page_content_49">गुरु-शिष्य परंपरा</span> एवं संन्यास परंपरा को आगे बढ़ाने वाली प्रतिष्ठित मढ़ी।</span></p>
                             </div>
                         </div>
                     </div>
@@ -230,7 +284,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/03.jpg" alt="">
                                 </figure>
@@ -238,10 +292,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">रामदत्ती मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_9">रामदत्ती मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>धर्म, तप एवं साधना के संरक्षण हेतु समर्पित परंपरागत मढ़ी।</p>
+                                <p><span data-i18n="auto_page_content_10">धर्म, तप एवं साधना के संरक्षण हेतु समर्पित परंपरागत मढ़ी।</span></p>
                             </div>
                         </div>
                     </div>
@@ -252,7 +306,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.6s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/Khumbh Mela.jpg" alt="">
                                 </figure>
@@ -260,10 +314,10 @@
                         </div>
                         <div class="post-item-body">                           
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">नृसिंह मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_11">नृसिंह मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>नृसिंह मढ़ी अखाड़े की प्राचीन संन्यासी परंपराओं का प्रतिनिधित्व करती है और धर्मरक्षा की भावना को सुदृढ़ करती है।</p>
+                                <p><span data-i18n="auto_page_content_11">नृसिंह मढ़ी</span> अखाड़े की प्राचीन संन्यासी परंपराओं का प्रतिनिधित्व करती है और धर्मरक्षा की भावना को सुदृढ़ करती है।</p>
                             </div>
                         </div>
                     </div>
@@ -274,7 +328,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="0.8s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/Historical manuscript.jpg" alt="">
                                 </figure>
@@ -282,10 +336,10 @@
                         </div>
                         <div class="post-item-body">                        
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">मनमुकुन्द मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_13">मनमुकुन्द मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>मनमुकुन्द मढ़ी आध्यात्मिक साधना, गुरु सेवा तथा अखाड़े की सांस्कृतिक विरासत के संरक्षण में अपना योगदान देती है।</p>
+                                <p><span data-i18n="auto_page_content_13">मनमुकुन्द मढ़ी</span> आध्यात्मिक साधना, गुरु सेवा तथा अखाड़े की सांस्कृतिक विरासत के संरक्षण में अपना योगदान देती है।</p>
                             </div>
                         </div>
                     </div>
@@ -296,7 +350,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/04.jpeg" alt="">
                                 </figure>
@@ -304,10 +358,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html"> खालसा मढ़ी</a></h2>
+                                <h2><a href="#"> <span data-i18n="auto_page_content_15">खालसा मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>खालसा मढ़ी अनुशासन, तप एवं अखाड़े की पारंपरिक व्यवस्था को बनाए रखने वाली प्रमुख मढ़ियों में सम्मिलित है।</p>
+                                <p><span data-i18n="auto_page_content_15">खालसा मढ़ी</span> अनुशासन, तप एवं अखाड़े की पारंपरिक व्यवस्था को बनाए रखने वाली प्रमुख मढ़ियों में सम्मिलित है।</p>
                             </div>
                         </div>
                     </div>
@@ -318,7 +372,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/05.jpg" alt="">
                                 </figure>
@@ -326,10 +380,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">  ब्रह्मनाथी मढ़ी</a></h2>
+                                <h2><a href="#">  <span data-i18n="auto_page_content_17">ब्रह्मनाथी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>ब्रह्मनाथी मढ़ी वेदांत, गुरु उपासना एवं सनातन धर्म के प्रचार-प्रसार की परंपरा को आगे बढ़ाती है।</p>
+                                <p><span data-i18n="auto_page_content_17">ब्रह्मनाथी मढ़ी</span> वेदांत, गुरु उपासना एवं सनातन धर्म के प्रचार-प्रसार की परंपरा को आगे बढ़ाती है।</p>
                             </div>
                         </div>
                     </div>
@@ -340,7 +394,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/06.jpg" alt="">
                                 </figure>
@@ -348,10 +402,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">गादी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_19">गादी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>गादी मढ़ी अखाड़े की धार्मिक व्यवस्था एवं गुरु परंपरा से जुड़ी महत्वपूर्ण परंपरागत मढ़ी मानी जाती है।</p>
+                                <p><span data-i18n="auto_page_content_19">गादी मढ़ी</span> अखाड़े की धार्मिक व्यवस्था एवं <span data-i18n="auto_page_content_41">गुरु परंपरा</span> से जुड़ी महत्वपूर्ण परंपरागत मढ़ी मानी जाती है।</p>
                             </div>
                         </div>
                     </div>
@@ -362,7 +416,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/om-image.jpg" alt="">
                                 </figure>
@@ -370,10 +424,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">ॐकारी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_21">ॐकारी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>ॐकारी मढ़ी भगवान शिव के पवित्र प्रणव ‘ॐ’ की आध्यात्मिक भावना से प्रेरित संन्यास परंपरा का प्रतिनिधित्व करती है।</p>
+                                <p><span data-i18n="auto_page_content_21">ॐकारी मढ़ी</span> भगवान शिव के पवित्र प्रणव ‘ॐ’ की आध्यात्मिक भावना से प्रेरित संन्यास परंपरा का प्रतिनिधित्व करती है।</p>
                             </div>
                         </div>
                     </div>
@@ -384,7 +438,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/07.jpg" alt="">
                                 </figure>
@@ -392,10 +446,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">परमानन्दी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_23">परमानन्दी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>परमानन्दी मढ़ी साधकों में आध्यात्मिक उन्नति, आत्मज्ञान एवं वैराग्य की भावना को विकसित करने का कार्य करती है।</p>
+                                <p><span data-i18n="auto_page_content_23">परमानन्दी मढ़ी</span> साधकों में आध्यात्मिक उन्नति, आत्मज्ञान एवं वैराग्य की भावना को विकसित करने का कार्य करती है।</p>
                             </div>
                         </div>
                     </div>
@@ -406,7 +460,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/niranjani-akhada.jpg" alt="">
                                 </figure>
@@ -414,10 +468,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">बोडला मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_25">बोडला मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>बोडला मढ़ी अखाड़े की ऐतिहासिक परंपराओं से जुड़ी हुई है तथा संत समाज की एक प्रतिष्ठित शाखा मानी जाती है।</p>
+                                <p><span data-i18n="auto_page_content_25">बोडला मढ़ी</span> अखाड़े की ऐतिहासिक परंपराओं से जुड़ी हुई है तथा संत समाज की एक प्रतिष्ठित शाखा मानी जाती है।</p>
                             </div>
                         </div>
                     </div>
@@ -428,7 +482,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/08.jpg" alt="">
                                 </figure>
@@ -436,10 +490,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">मुल्तानी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_27">मुल्तानी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>मुल्तानी मढ़ी प्राचीन संन्यास परंपरा की एक महत्वपूर्ण कड़ी है, जिसने विभिन्न क्षेत्रों में अखाड़े की परंपरा को आगे बढ़ाया।</p>
+                                <p><span data-i18n="auto_page_content_27">मुल्तानी मढ़ी</span> प्राचीन संन्यास परंपरा की एक महत्वपूर्ण कड़ी है, जिसने विभिन्न क्षेत्रों में अखाड़े की परंपरा को आगे बढ़ाया।</p>
                             </div>
                         </div>
                     </div>
@@ -450,7 +504,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/09.jpg" alt="">
                                 </figure>
@@ -458,10 +512,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">वैकुण्ठी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_29">वैकुण्ठी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>वैकुण्ठी मढ़ी आध्यात्मिक साधना, सेवा एवं धार्मिक संस्कारों के संरक्षण के उद्देश्य से कार्यरत परंपरागत मढ़ी है।</p>
+                                <p><span data-i18n="auto_page_content_29">वैकुण्ठी मढ़ी</span> आध्यात्मिक साधना, सेवा एवं धार्मिक संस्कारों के संरक्षण के उद्देश्य से कार्यरत परंपरागत मढ़ी है।</p>
                             </div>
                         </div>
                     </div>
@@ -472,7 +526,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/13.jpg" alt="">
                                 </figure>
@@ -480,10 +534,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">सिंहासनी मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_31">सिंहासनी मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>सिंहासनी मढ़ी अखाड़े की प्रतिष्ठित मढ़ियों में से एक है, जो शैव संन्यास परंपरा एवं धार्मिक अनुशासन को सुदृढ़ करती है।</p>
+                                <p><span data-i18n="auto_page_content_31">सिंहासनी मढ़ी</span> अखाड़े की प्रतिष्ठित मढ़ियों में से एक है, जो शैव संन्यास परंपरा एवं धार्मिक अनुशासन को सुदृढ़ करती है।</p>
                             </div>
                         </div>
                     </div>
@@ -494,7 +548,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/10.jpg" alt="">
                                 </figure>
@@ -502,10 +556,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">दरियाव मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_33">दरियाव मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>दरियाव मढ़ी सेवा, समर्पण एवं संत परंपरा के आदर्शों का पालन करते हुए अखाड़े की सांस्कृतिक धरोहर को संरक्षित करती है।</p>
+                                <p><span data-i18n="auto_page_content_33">दरियाव मढ़ी</span> सेवा, समर्पण एवं संत परंपरा के आदर्शों का पालन करते हुए अखाड़े की सांस्कृतिक धरोहर को संरक्षित करती है।</p>
                             </div>
                         </div>
                     </div>
@@ -516,7 +570,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/gurus.jpg" alt="">
                                 </figure>
@@ -524,10 +578,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">दस + चार मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_35">दस + चार मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>दस + चार मढ़ी अखाड़े की विशिष्ट पारंपरिक शाखाओं में से एक है, जो गुरु-शिष्य परंपरा एवं संगठनात्मक संरचना का अभिन्न भाग है।</p>
+                                <p><span data-i18n="auto_page_content_35">दस + चार मढ़ी</span> अखाड़े की विशिष्ट पारंपरिक शाखाओं में से एक है, जो <span data-i18n="auto_page_content_49">गुरु-शिष्य परंपरा</span> एवं संगठनात्मक संरचना का अभिन्न भाग है।</p>
                             </div>
                         </div>
                     </div>
@@ -538,7 +592,7 @@
                     <!-- Post Item Start -->
                     <div class="post-item wow fadeInUp" data-wow-delay="1s">
                         <div class="post-item-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure>
                                     <img src="images/11.png" alt="">
                                 </figure>
@@ -546,10 +600,10 @@
                         </div>
                         <div class="post-item-body">
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">दस + छः मढ़ी</a></h2>
+                                <h2><a href="#"><span data-i18n="auto_page_content_37">दस + छः मढ़ी</span></a></h2>
                             </div>
                             <div class="post-item-btn">
-                                <p>दस + छः मढ़ी श्री पंचायती अखाड़ा श्री निरंजनी की मान्य परंपरागत मढ़ियों में सम्मिलित है और अखाड़े की आध्यात्मिक एवं धार्मिक परंपराओं के संरक्षण में महत्वपूर्ण भूमिका निभाती है।</p>
+                                <p><span data-i18n="auto_page_content_37">दस + छः मढ़ी</span> श्री पंचायती अखाड़ा श्री निरंजनी की मान्य परंपरागत मढ़ियों में सम्मिलित है और अखाड़े की आध्यात्मिक एवं धार्मिक परंपराओं के संरक्षण में महत्वपूर्ण भूमिका निभाती है।</p>
                             </div>
                         </div>
                     </div>
@@ -582,7 +636,7 @@
                             <h5 data-i18n="auto_key_161"
                                 style="font-weight: 100; color: #eee; margin-top: 20px; text-align: justify;">आदि
                                 शंकराचार्य द्वारा स्थापित दशनामी शैव संन्यास परंपरा का एक प्रमुख अखाड़ा, जो सनातन धर्म,
-                                गुरु-शिष्य परंपरा एवं आध्यात्मिक संस्कृति के संरक्षण के लिए समर्पित है।</h5>
+                                <span data-i18n="auto_page_content_49">गुरु-शिष्य परंपरा</span> एवं आध्यात्मिक संस्कृति के संरक्षण के लिए समर्पित है।</h5>
                         </div>
                         <!-- Section Title End -->
                         <!-- फ़ुटर न्यूज़लैटर फॉर्म Start -->
@@ -625,13 +679,13 @@
                                 <li><a data-i18n="auto_key_165" href="index.html">मुखपृष्ठ</a></li>
                                 <li><a data-i18n="auto_key_166" href="about.html"> हमारे बारे में</a>
                                 </li>
-                                <li><a data-i18n="auto_key_3" href="ministries.html"> इतिहास</a></li>
-                                <li><a data-i18n="auto_key_42" href="sermons.html"> गुरु परंपरा</a>
+                                <li><a data-i18n="auto_key_3" href="#"> <span data-i18n="auto_page_content_39">इतिहास</span></a></li>
+                                <li><a data-i18n="auto_key_42" href="#"> <span data-i18n="auto_page_content_41">गुरु परंपरा</span></a>
                                 </li>
-                                <li><a data-i18n="auto_key_5" href="contact.html">
-                                        मढ़ियाँ</a></li>
+                                <li><a data-i18n="auto_key_5" href="#">
+                                        <span data-i18n="auto_page_content_2">मढ़ियाँ</span></a></li>
                                 <li><a data-i18n="auto_key_167" href="index.html"> शाखाएँ</a></li>
-                                <li><a data-i18n="auto_key_168" href="about.html"> कुंभ पर्व</a>
+                                <li><a data-i18n="auto_key_168" href="about.html"> <span data-i18n="auto_page_content_42">कुंभ पर्व</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -640,15 +694,15 @@
                         <div class="footer-links footer-service-links">
                             <h2 data-i18n="auto_key_169">Our Services</h2>
                             <ul>
-                                <li><a data-i18n="auto_key_170" href="service-single.html"> श्री गुरु निरंजन देव
+                                <li><a data-i18n="auto_key_170" href="#"> श्री गुरु निरंजन देव
                                         स्तुति</a></li>
-                                <li><a data-i18n="auto_key_171" href="service-single.html"> चार महावाक्य</a></li>
-                                <li><a data-i18n="auto_key_172" href="service-single.html"> सप्त मोक्षदायिनी पुरियाँ</a>
+                                <li><a data-i18n="auto_key_171" href="#"> चार महावाक्य</a></li>
+                                <li><a data-i18n="auto_key_172" href="#"> सप्त मोक्षदायिनी पुरियाँ</a>
                                 </li>
-                                <li><a data-i18n="auto_key_173" href="service-single.html"> द्वादश ज्योतिर्लिंग</a></li>
-                                <li><a data-i18n="auto_key_174" href="service-single.html"> गुरुकार्तिकेय स्तोत्र</a>
+                                <li><a data-i18n="auto_key_173" href="#"> द्वादश ज्योतिर्लिंग</a></li>
+                                <li><a data-i18n="auto_key_174" href="#"> गुरुकार्तिकेय स्तोत्र</a>
                                 </li>
-                                <li><a data-i18n="auto_key_175" href="service-single.html"> सप्त चिरंजीवी मंत्र</a></li>
+                                <li><a data-i18n="auto_key_175" href="#"> सप्त चिरंजीवी मंत्र</a></li>
                             </ul>
                         </div>
                         <!-- फ़ुटर Links ख़त्म -->
@@ -734,4 +788,5 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 
+<script src="js/lang.js"></script>
 </body></html>

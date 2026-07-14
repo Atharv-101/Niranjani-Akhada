@@ -31,6 +31,64 @@
 	<link rel="stylesheet" href="css/plyr.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+
+<!-- Modern Typography and Styling Overrides -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-font: 'Outfit', sans-serif !important;
+        --secondary-font: 'Inter', sans-serif !important;
+        --text-color: #333;
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    body, p, span, li, a {
+        font-family: var(--secondary-font) !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--primary-font) !important;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+    /* Page Header Enhancement */
+    .page-header-box h1 {
+        font-size: 2.8rem;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+    .page-header-box h1 .line, .page-header-box h1 .word, .page-header-box h1 .char {
+        color: #ffffff !important;
+    }
+    /* Fix messy headings generally */
+    .section-title h2 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    /* Clean up general typography */
+    p {
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* Mobile Language Button */
+    .mobile-lang-wrapper {
+        display: none;
+        align-items: center;
+    }
+    @media (max-width: 991px) {
+        .mobile-lang-wrapper {
+            display: flex !important;
+        }
+        .main-header .navbar-toggle {
+            margin-left: 10px;
+        }
+    }
+
+</style>
+
 </head>
 <body>
 
@@ -61,37 +119,37 @@
                                 <li class="nav-item submenu"><a class="nav-link" href="./">Home</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="index.html">Home - Version 1</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Version 2</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-3.html">Home - Version 3</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Home - Version 2</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Home - Version 3</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                </li><li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                </li><li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                                 <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="sermons.html">Sermons</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="sermon-single.html">Sermon Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="ministries.html">Our Ministries</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="ministry-single.html">Ministry Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="pastor.html">Pastor</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="pastor-single.html">Pastor Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Service Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Blog Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Sermons</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Sermon Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Our Ministries</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Ministry Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Pastor</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Pastor Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Image Gallery</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">Video Gallery</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#">404</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                             </ul>
                         </div>
                         
                         <!-- Header Btn Start -->
                         <div class="header-btn">
-                            <a href="contact.html" class="btn-default btn-highlighted">Join Worship</a>
+                            <a href="#" class="btn-default btn-highlighted">Join Worship</a>
                         </div>
                         <!-- Header Btn End -->
                     </div>
@@ -134,7 +192,7 @@
                     <!-- Pastor Item Start -->
                     <div class="pastor-item wow fadeInUp">
                         <div class="pastor-item-image">
-                            <a href="pastor-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/pastor-1.jpg" alt="">
                                 </figure>
@@ -149,7 +207,7 @@
                             </div>
                         </div>
                         <div class="pastor-item-content">
-                            <h2><a href="pastor-single.html">Pastor Daniel Matthews</a></h2>
+                            <h2><a href="#">Pastor Daniel Matthews</a></h2>
                             <p>Senior Pastor</p>
                         </div>
                     </div>
@@ -160,7 +218,7 @@
                     <!-- Pastor Item Start -->
                     <div class="pastor-item wow fadeInUp" data-wow-delay="0.2s">
                         <div class="pastor-item-image">
-                            <a href="pastor-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/pastor-2.jpg" alt="">
                                 </figure>
@@ -175,7 +233,7 @@
                             </div>
                         </div>
                         <div class="pastor-item-content">
-                            <h2><a href="pastor-single.html">Pastor Rebecca Collins</a></h2>
+                            <h2><a href="#">Pastor Rebecca Collins</a></h2>
                             <p>Associate Pastor</p>
                         </div>
                     </div>
@@ -186,7 +244,7 @@
                     <!-- Pastor Item Start -->
                     <div class="pastor-item wow fadeInUp" data-wow-delay="0.4s">
                         <div class="pastor-item-image">
-                            <a href="pastor-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/pastor-3.jpg" alt="">
                                 </figure>
@@ -201,7 +259,7 @@
                             </div>
                         </div>
                         <div class="pastor-item-content">
-                            <h2><a href="pastor-single.html">Pastor Michael Thompson</a></h2>
+                            <h2><a href="#">Pastor Michael Thompson</a></h2>
                             <p>Junior Pastor</p>
                         </div>
                     </div>
@@ -212,7 +270,7 @@
                     <!-- Pastor Item Start -->
                     <div class="pastor-item wow fadeInUp" data-wow-delay="0.6s">
                         <div class="pastor-item-image">
-                            <a href="pastor-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/pastor-4.jpg" alt="">
                                 </figure>
@@ -227,7 +285,7 @@
                             </div>
                         </div>
                         <div class="pastor-item-content">
-                            <h2><a href="pastor-single.html">Pastor David Wilson</a></h2>
+                            <h2><a href="#">Pastor David Wilson</a></h2>
                             <p>Church Administrator</p>
                         </div>
                     </div>
@@ -238,7 +296,7 @@
                     <!-- Pastor Item Start -->
                     <div class="pastor-item wow fadeInUp" data-wow-delay="0.8s">
                         <div class="pastor-item-image">
-                            <a href="pastor-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/pastor-5.jpg" alt="">
                                 </figure>
@@ -253,7 +311,7 @@
                             </div>
                         </div>
                         <div class="pastor-item-content">
-                            <h2><a href="pastor-single.html">Pastor Rachel Brown</a></h2>
+                            <h2><a href="#">Pastor Rachel Brown</a></h2>
                             <p> Children's Ministry Director</p>
                         </div>
                     </div>
@@ -264,7 +322,7 @@
                     <!-- Pastor Item Start -->
                     <div class="pastor-item wow fadeInUp" data-wow-delay="1s">
                         <div class="pastor-item-image">
-                            <a href="pastor-single.html" data-cursor-text="View">
+                            <a href="#" data-cursor-text="View">
                                 <figure class="image-anime">
                                     <img src="images/pastor-6.jpg" alt="">
                                 </figure>
@@ -279,7 +337,7 @@
                             </div>
                         </div>
                         <div class="pastor-item-content">
-                            <h2><a href="pastor-single.html">Pastor Sarah Williams</a></h2>
+                            <h2><a href="#">Pastor Sarah Williams</a></h2>
                             <p>Associate Pastor</p>
                         </div>
                     </div>
@@ -326,7 +384,7 @@
                         </div>
                         <div class="footer-contact-list">
                             <ul>
-                                <li><img src="images/icon-phone-accent.svg" alt=""><a href="tel:123456789">(+01) 123 456 789</a></li>
+                                <li><img src="images/icon-phone-accent.svg" alt=""><a href="#">(+01) 123 456 789</a></li>
                                 <li><img src="images/icon-mail-accent.svg" alt=""><a href="mailto:info@domainname.com">info@domainname.com</a></li>
                             </ul>
                         </div>                      
@@ -343,9 +401,9 @@
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="ministries.html">Our Ministries</a></li>
-                                <li><a href="sermons.html">Sermons</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#">Our Ministries</a></li>
+                                <li><a href="#">Sermons</a></li>
+                                <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
@@ -354,11 +412,11 @@
                         <div class="footer-links footer-service-links">
                             <h2>Our Services</h2>
                             <ul>
-                                <li><a href="service-single.html">Prayer and Intercession</a></li>
-                                <li><a href="service-single.html">Bible Study and Teaching</a></li>
-                                <li><a href="service-single.html">Outreach and Community</a></li>
-                                <li><a href="service-single.html">Children's Church</a></li>
-                                <li><a href="service-single.html">Youth Ministry Service</a></li>
+                                <li><a href="#">Prayer and Intercession</a></li>
+                                <li><a href="#">Bible Study and Teaching</a></li>
+                                <li><a href="#">Outreach and Community</a></li>
+                                <li><a href="#">Children's Church</a></li>
+                                <li><a href="#">Youth Ministry Service</a></li>
                             </ul>
                         </div>
                         <!-- Footer Links End -->
@@ -441,4 +499,5 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 
+<script src="js/lang.js"></script>
 </body></html>

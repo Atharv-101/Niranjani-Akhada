@@ -75,6 +75,64 @@ without permission is prohibited.
 <link href="css/plyr.css" rel="stylesheet"/>
 <!-- मुख्य कस्टम सीएसएस -->
 <link href="css/custom.css" media="screen" rel="stylesheet"/>
+
+<!-- Modern Typography and Styling Overrides -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-font: 'Outfit', sans-serif !important;
+        --secondary-font: 'Inter', sans-serif !important;
+        --text-color: #333;
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    body, p, span, li, a {
+        font-family: var(--secondary-font) !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--primary-font) !important;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+    /* Page Header Enhancement */
+    .page-header-box h1 {
+        font-size: 2.8rem;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+    .page-header-box h1 .line, .page-header-box h1 .word, .page-header-box h1 .char {
+        color: #ffffff !important;
+    }
+    /* Fix messy headings generally */
+    .section-title h2 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    /* Clean up general typography */
+    p {
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* Mobile Language Button */
+    .mobile-lang-wrapper {
+        display: none;
+        align-items: center;
+    }
+    @media (max-width: 991px) {
+        .mobile-lang-wrapper {
+            display: flex !important;
+        }
+        .main-header .navbar-toggle {
+            margin-left: 10px;
+        }
+    }
+
+</style>
+
 </head>
 <body>
 <!-- Preloader Start -->
@@ -105,60 +163,60 @@ without permission is prohibited.
                                         बारे में</a>
 </li>
 <li class="nav-item"><a class="nav-link" data-i18n="auto_key_3" href="history.html">इतिहास</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_4" href="blog.html">गुरु
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_4" href="guru_tradition.html">गुरु
                                         परंपरा</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_5" href="blog.html">मढ़ियाँ</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_5" href="madhiyas.html">मढ़ियाँ</a></li>
 <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_6" href="#">संत एवं
                                         महंत</a>
 <ul>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_7" href="service-single.html">महामंडलेश्वर</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="blog-single.html">महंत</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_9" href="sermons.html">Sermons</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_10" href="sermon-single.html">Sermon
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_7" href="Swami-Kailashanand-Giri-Jii.html">महामंडलेश्वर</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="Mahant-Ravinder-Puri.html">महंत</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_9" href="#">Sermons</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_10" href="#">Sermon
                                                 Details</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_11" href="ministries.html">Our
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_11" href="#">Our
                                                 Ministries</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_12" href="ministry-single.html">Ministry
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_12" href="#">Ministry
                                                 Details</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_13" href="pastor.html">Pastor</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_14" href="pastor-single.html">Pastor
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_13" href="#">Pastor</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_14" href="#">Pastor
                                                 Details</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_15" href="testimonials.html">Testimonials</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_16" href="image-gallery.html">Image
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_15" href="#">Testimonials</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_16" href="#">Image
                                                 Gallery</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_17" href="video-gallery.html">Video
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_17" href="#">Video
                                                 Gallery</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_18" href="faqs.html">FAQs</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_19" href="404.html">404</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_18" href="#">FAQs</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_19" href="#">404</a></li>
 </ul>
 </li>
-<li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="#">अखाड़े
+<li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="history.html">अखाड़े
                                         की शाखाएँ</a>
 <ul>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_21" href="service-single.html">देशभर की
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_21" href="guru_tradition.html">देशभर की
                                                 शाखाएँ</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="blog-single.html">महंत</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_22" href="sermons.html">अखाड़े की
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="Mahant-Ravinder-Puri.html">महंत</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_22" href="#">अखाड़े की
                                                 शाखाएँ</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_23" href="sermon-single.html">हमारी
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_23" href="#">हमारी
                                                 शाखाएँ</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_24" href="ministries.html">शाखा केंद्र</a>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_24" href="madhiyas.html">शाखा केंद्र</a>
 </li>
 </ul>
 </li>
 <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_25" href="#">गतिविधियाँ</a>
 <ul>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_26" href="service-single.html">कार्यक्रम</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_27" href="blog-single.html">कुंभ मेला</a>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_26" href="#">कार्यक्रम</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_27" href="#">कुंभ मेला</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_28" href="sermons.html">चित्रावली</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_29" href="sermon-single.html">समाचार</a>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_28" href="gallery.html">चित्रावली</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_29" href="news.html">समाचार</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_30" href="ministries.html">दान</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_30" href="#">दान</a></li>
 </ul>
 </li>
 </ul>
@@ -257,7 +315,7 @@ without permission is prohibited.
 <div class="about-us-footer wow fadeInUp" data-wow-delay="0.6s">
 <!-- About Us Button Start -->
 <div class="about-us-btn">
-<a class="btn-default" data-i18n="auto_key_185" href="contact.html">इतिहास जानें</a>
+<a class="btn-default" data-i18n="auto_key_185" href="#">इतिहास जानें</a>
 </div>
 <!-- About Us Button End -->
 <!-- About Author Box Start -->
@@ -480,7 +538,7 @@ without permission is prohibited.
 <div class="our-mission-footer wow fadeInUp" data-wow-delay="0.6s">
 <!-- Mission Button Start -->
 <div class="mission-btn">
-<a class="btn-default" data-i18n="auto_key_217" href="contact.html">आध्यात्मिक विरासत जानें</a>
+<a class="btn-default" data-i18n="auto_key_217" href="#">आध्यात्मिक विरासत जानें</a>
 </div>
 <!-- Mission Button End -->
 </div>
@@ -531,14 +589,14 @@ without permission is prohibited.
 <!-- Pastor Item Start -->
 <div class="pastor-item wow fadeInUp">
 <div class="pastor-item-image">
-<a data-cursor-text="View" href="pastor-single.html">
+<a data-cursor-text="View" href="#">
 <figure>
 <img alt="" src="images/kailashnandgiriji.jpg"/>
 </figure>
 </a>
 </div>
 <div class="pastor-item-content">
-<h2><a data-i18n="auto_key_220" href="pastor-single.html">परम पूज्य श्री श्री १००८ आचार्य महामण्डलेश्वर निरंजन पीठाधीश्वर स्वामी कैलाशानन्द गिरि जी महाराज</a></h2>
+<h2><a data-i18n="auto_key_220" href="#">परम पूज्य श्री श्री १००८ आचार्य महामण्डलेश्वर निरंजन पीठाधीश्वर स्वामी कैलाशानन्द गिरि जी महाराज</a></h2>
 </div>
 </div>
 <!-- Pastor Item End -->
@@ -547,14 +605,14 @@ without permission is prohibited.
 <!-- Pastor Item Start -->
 <div class="pastor-item wow fadeInUp" data-wow-delay="0.2s">
 <div class="pastor-item-image">
-<a data-cursor-text="View" href="pastor-single.html">
+<a data-cursor-text="View" href="#">
 <figure>
 <img alt="" src="images/ravindrapuri.jpg"/>
 </figure>
 </a>
 </div>
 <div class="pastor-item-content">
-<h2><a data-i18n="auto_key_186" href="pastor-single.html">श्रीमहंत रविन्द्र पुरी जी महाराज</a></h2>
+<h2><a data-i18n="auto_key_186" href="#">श्रीमहंत रविन्द्र पुरी जी महाराज</a></h2>
 <p data-i18n="auto_key_221">अध्यक्ष</p>
 </div>
 </div>
@@ -564,14 +622,14 @@ without permission is prohibited.
 <!-- Pastor Item Start -->
 <div class="pastor-item wow fadeInUp" data-wow-delay="0.4s">
 <div class="pastor-item-image">
-<a data-cursor-text="View" href="pastor-single.html">
+<a data-cursor-text="View" href="#">
 <figure>
 <img alt="" src="images/mahant-onkar-giri.jpeg.png"/>
 </figure>
 </a>
 </div>
 <div class="pastor-item-content">
-<h2><a data-i18n="auto_key_222" href="pastor-single.html">महंत ओंकार गिरि जी महाराज</a></h2>
+<h2><a data-i18n="auto_key_222" href="#">महंत ओंकार गिरि जी महाराज</a></h2>
 <p data-i18n="auto_key_223">सचिव</p>
 </div>
 </div>
@@ -745,7 +803,7 @@ without permission is prohibited.
 <!-- Section Title End -->
 <!-- Testimoial Content Button Start -->
 <div class="testimonial-content-btn wow fadeInUp" data-wow-delay="0.4s">
-<a class="btn-default" data-i18n="auto_key_242" href="testimonials.html">सभी केंद्र देखें </a>
+<a class="btn-default" data-i18n="auto_key_242" href="#">सभी केंद्र देखें </a>
 </div>
 <!-- Testimoial Content Button End -->
 </div>
@@ -1133,10 +1191,10 @@ without permission is prohibited.
 <li><a data-i18n="auto_key_165" href="index.html">मुखपृष्ठ</a></li>
 <li><a data-i18n="auto_key_166" href="about.html"> हमारे बारे में</a>
 </li>
-<li><a data-i18n="auto_key_3" href="ministries.html"> इतिहास</a></li>
-<li><a data-i18n="auto_key_42" href="sermons.html"> गुरु परंपरा</a>
+<li><a data-i18n="auto_key_3" href="#"> इतिहास</a></li>
+<li><a data-i18n="auto_key_42" href="#"> गुरु परंपरा</a>
 </li>
-<li><a data-i18n="auto_key_5" href="contact.html">
+<li><a data-i18n="auto_key_5" href="#">
                                         मढ़ियाँ</a></li>
 <li><a data-i18n="auto_key_167" href="index.html"> शाखाएँ</a></li>
 <li><a data-i18n="auto_key_168" href="about.html"> कुंभ पर्व</a>
@@ -1148,15 +1206,15 @@ without permission is prohibited.
 <div class="footer-links footer-service-links">
 <h2 data-i18n="auto_key_169">Our Services</h2>
 <ul>
-<li><a data-i18n="auto_key_170" href="service-single.html"> श्री गुरु निरंजन देव
+<li><a data-i18n="auto_key_170" href="#"> श्री गुरु निरंजन देव
                                         स्तुति</a></li>
-<li><a data-i18n="auto_key_171" href="service-single.html"> चार महावाक्य</a></li>
-<li><a data-i18n="auto_key_172" href="service-single.html"> सप्त मोक्षदायिनी पुरियाँ</a>
+<li><a data-i18n="auto_key_171" href="#"> चार महावाक्य</a></li>
+<li><a data-i18n="auto_key_172" href="#"> सप्त मोक्षदायिनी पुरियाँ</a>
 </li>
-<li><a data-i18n="auto_key_173" href="service-single.html"> द्वादश ज्योतिर्लिंग</a></li>
-<li><a data-i18n="auto_key_174" href="service-single.html"> गुरुकार्तिकेय स्तोत्र</a>
+<li><a data-i18n="auto_key_173" href="#"> द्वादश ज्योतिर्लिंग</a></li>
+<li><a data-i18n="auto_key_174" href="#"> गुरुकार्तिकेय स्तोत्र</a>
 </li>
-<li><a data-i18n="auto_key_175" href="service-single.html"> सप्त चिरंजीवी मंत्र</a></li>
+<li><a data-i18n="auto_key_175" href="#"> सप्त चिरंजीवी मंत्र</a></li>
 </ul>
 </div>
 <!-- फ़ुटर Links ख़त्म -->

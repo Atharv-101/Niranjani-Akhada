@@ -19,7 +19,7 @@
     <meta content="Hindi, Sanskrit" name="language" />
     <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots" />
     <!-- पृष्ठ शीर्षक -->
-    <title>गुरु परंपरा | पंचायती अखाड़ा श्री निरंजनी | आधिकारिक वेबसाइट</title>
+    <title><span data-i18n="auto_page_content_41">गुरु परंपरा</span> | पंचायती अखाड़ा श्री निरंजनी | आधिकारिक वेबसाइट</title>
     <!-- फ़ेविकॉन चिह्न -->
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -47,6 +47,64 @@
     <link href="css/plyr.css" rel="stylesheet" />
     <!-- मुख्य कस्टम सीएसएस -->
     <link href="css/custom.css" media="screen" rel="stylesheet" />
+
+<!-- Modern Typography and Styling Overrides -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-font: 'Outfit', sans-serif !important;
+        --secondary-font: 'Inter', sans-serif !important;
+        --text-color: #333;
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    body, p, span, li, a {
+        font-family: var(--secondary-font) !important;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--primary-font) !important;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+    /* Page Header Enhancement */
+    .page-header-box h1 {
+        font-size: 2.8rem;
+        color: #ffffff !important;
+        text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+    .page-header-box h1 .line, .page-header-box h1 .word, .page-header-box h1 .char {
+        color: #ffffff !important;
+    }
+    /* Fix messy headings generally */
+    .section-title h2 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    /* Clean up general typography */
+    p {
+        line-height: 1.7;
+        color: #555;
+    }
+
+    /* Mobile Language Button */
+    .mobile-lang-wrapper {
+        display: none;
+        align-items: center;
+    }
+    @media (max-width: 991px) {
+        .mobile-lang-wrapper {
+            display: flex !important;
+        }
+        .main-header .navbar-toggle {
+            margin-left: 10px;
+        }
+    }
+
+</style>
+
 </head>
 
 <body>
@@ -79,35 +137,35 @@
 <li class="nav-item"><a class="nav-link" data-i18n="auto_key_2" href="about.html">हमारे
                                         बारे में</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_3" href="history.html">इतिहास</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_4" href="guru_tradition.html">गुरु परंपरा</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_5" href="madhiyas.html">मढ़ियाँ</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_3" href="history.html"><span data-i18n="auto_page_content_39">इतिहास</span></a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_4" href="guru_tradition.html"><span data-i18n="auto_page_content_41">गुरु परंपरा</span></a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_5" href="madhiyas.html"><span data-i18n="auto_page_content_2">मढ़ियाँ</span></a></li>
 <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_6" href="#">संत एवं
                                         महंत</a>
 <ul>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_7" href="service-single.html">महामंडलेश्वर</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="blog-single.html">महंत</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_7" href="Swami-Kailashanand-Giri-Jii.html">महामंडलेश्वर</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_8" href="Mahant-Ravinder-Puri.html">महंत</a></li>
 </ul>
 </li>
-<li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="#">अखाड़े
+<li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_20" href="history.html">अखाड़े
                                         की शाखाएँ</a>
 <ul>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_21" href="service-single.html">देशभर की
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_21" href="guru_tradition.html">देशभर की
                                                 शाखाएँ</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_24" href="ministries.html">शाखा केंद्र</a>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_24" href="madhiyas.html">शाखा केंद्र</a>
 </li>
 </ul>
 </li>
 <li class="nav-item submenu"><a class="nav-link" data-i18n="auto_key_25" href="#">गतिविधियाँ</a>
 <ul>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_26" href="service-single.html">कार्यक्रम</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_27" href="blog-single.html">कुंभ मेला</a>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_26" href="#">कार्यक्रम</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_27" href="#">कुंभ मेला</a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_28" href="sermons.html">चित्रावली</a></li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_29" href="sermon-single.html">समाचार</a>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_28" href="gallery.html">चित्रावली</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_29" href="news.html"><span data-i18n="auto_page_content_1">समाचार</span></a>
 </li>
-<li class="nav-item"><a class="nav-link" data-i18n="auto_key_30" href="ministries.html">दान</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="auto_key_30" href="#">दान</a></li>
 </ul>
 </li>
 </ul>
@@ -133,11 +191,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-3" data-cursor="-opaque">गुरु परंपरा</h1>
+                        <h1 class="text-anime-style-3" data-cursor="-opaque"><span data-i18n="auto_page_content_41">गुरु परंपरा</span></h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">मुखपृष्ठ </a></li>
-                                <li class="breadcrumb-item active" aria-current="page">गुरु परंपरा</li>
+                                <li class="breadcrumb-item active" aria-current="page"><span data-i18n="auto_page_content_41">गुरु परंपरा</span></li>
                             </ol>
                         </nav>
                     </div>
@@ -164,7 +222,7 @@
                         <!-- Page Single Image End -->
                         <!-- Service Expectation Box Start -->
                         <div class="service-expectation-box" style="text-align: center; background: #fffcf5; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 50px; border: 1px solid #f2e6d9;">
-                            <h2 class="text-anime-style-3" style="color: #d35400; font-family: 'Tiro Devanagari Marathi', serif; font-size: 32px; margin-bottom: 30px;">॥ श्री गुरु निरंजन देव ॥</h2>
+                            <h2 class="text-anime-style-3" style="color: #d35400; font-family: 'Tiro Devanagari Marathi', serif; font-size: 32px; margin-bottom: 30px;"><span data-i18n="auto_page_content_67">॥ श्री गुरु निरंजन देव ॥</span></h2>
                             <div class="wow fadeInUp" style="font-family: 'Tiro Devanagari Marathi', serif; font-size: 22px; line-height: 2; color: #444; font-weight: 600;">
                                 <p style="margin-bottom: 20px;">अखण्डमण्डलाकारं व्याप्तं येन चराचरम् ।<br>
                                 तत्पदं दर्शितं येन तस्मै श्रीगुरवे नमः ॥</p>
@@ -187,8 +245,8 @@
                             </div>
                             <!-- Service Benefit Box Start -->
                             <div class="service-benefit-box">
-                                <h2 class="text-anime-style-3" style="text-align: center;">श्री पंचायती अखाड़ा श्री निरंजनी की गुरु परंपरा</h2>
-                                <p class="wow fadeInUp" style="text-align: center; font-size: 18px; line-height: 1.8; font-weight: 500; color: #555; font-family: 'Tiro Devanagari Marathi', serif;">गुरु परंपरा भारतीय सनातन संस्कृति की आत्मा है। श्री पंचायती
+                                <h2 class="text-anime-style-3" style="text-align: center;">श्री पंचायती अखाड़ा श्री निरंजनी की <span data-i18n="auto_page_content_41">गुरु परंपरा</span></h2>
+                                <p class="wow fadeInUp" style="text-align: center; font-size: 18px; line-height: 1.8; font-weight: 500; color: #555; font-family: 'Tiro Devanagari Marathi', serif;"><span data-i18n="auto_page_content_41">गुरु परंपरा</span> भारतीय सनातन संस्कृति की आत्मा है। श्री पंचायती
                                     अखाड़ा श्री निरंजनी में गुरु को ब्रह्मा, विष्णु एवं महेश के स्वरूप के रूप में पूज्य
                                     माना जाता है। गुरु ही शिष्य को आत्मज्ञान, वैराग्य, तप, योग तथा धर्म के मार्ग पर
                                     अग्रसर करते हैं। यह अखंड परंपरा सदियों से गुरु से शिष्य तक निरंतर प्रवाहित होती आ
@@ -204,8 +262,8 @@
                                                 <img src="images/om.svg" alt="">
                                             </div>
                                             <div class="guru-card-content">
-                                                <h3 class="guru-card-title">आध्यात्मिक ज्ञान</h3>
-                                                <p class="guru-card-text">गुरु शिष्य को वेद, उपनिषद, शास्त्र एवं आत्मज्ञान का प्रकाश प्रदान करते हैं।</p>
+                                                <h3 class="guru-card-title"><span data-i18n="auto_page_content_73">आध्यात्मिक ज्ञान</span></h3>
+                                                <p class="guru-card-text"><span data-i18n="auto_page_content_74">गुरु शिष्य को वेद, उपनिषद, शास्त्र एवं आत्मज्ञान का प्रकाश प्रदान करते हैं।</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -218,8 +276,8 @@
                                                 <img src="images/om.svg" alt="">
                                             </div>
                                             <div class="guru-card-content">
-                                                <h3 class="guru-card-title">संन्यास दीक्षा</h3>
-                                                <p class="guru-card-text">गुरु के मार्गदर्शन में संन्यास की दीक्षा प्राप्त कर साधक धर्म एवं साधना का जीवन प्रारंभ करता है।</p>
+                                                <h3 class="guru-card-title"><span data-i18n="auto_page_content_75">संन्यास दीक्षा</span></h3>
+                                                <p class="guru-card-text"><span data-i18n="auto_page_content_76">गुरु के मार्गदर्शन में संन्यास की दीक्षा प्राप्त कर साधक धर्म एवं साधना का जीवन प्रारंभ करता है।</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -232,8 +290,8 @@
                                                 <img src="images/om.svg" alt="">
                                             </div>
                                             <div class="guru-card-content">
-                                                <h3 class="guru-card-title">अनुशासन एवं साधना</h3>
-                                                <p class="guru-card-text">गुरु परंपरा तप, संयम, सेवा और आत्मानुशासन का सर्वोच्च आदर्श प्रस्तुत करती है।</p>
+                                                <h3 class="guru-card-title"><span data-i18n="auto_page_content_77">अनुशासन एवं साधना</span></h3>
+                                                <p class="guru-card-text"><span data-i18n="auto_page_content_41">गुरु परंपरा</span> तप, संयम, सेवा और आत्मानुशासन का सर्वोच्च आदर्श प्रस्तुत करती है।</p>
                                             </div>
                                         </div>
                                     </div>
@@ -347,7 +405,7 @@
                                                             class="accordion-button" data-bs-target="#collapse2"
                                                             data-bs-toggle="collapse" data-i18n="auto_key_140"
                                                             type="button">
-                                                            Q2.श्री पंचायती निरंजनी अखाड़े में कुल कितनी मढ़ियाँ हैं?
+                                                            Q2.श्री पंचायती निरंजनी अखाड़े में कुल कितनी <span data-i18n="auto_page_content_2">मढ़ियाँ</span> हैं?
                                                         </button>
                                                     </h2>
                                                     <div aria-labelledby="heading2"
@@ -355,7 +413,7 @@
                                                         data-bs-parent="#accordion" id="collapse2" role="region">
                                                         <div class="accordion-body">
                                                             <p data-i18n="auto_key_141">श्री पंचायती निरंजनी अखाड़े के
-                                                                अंतर्गत 18 मढ़ियाँ
+                                                                अंतर्गत 18 <span data-i18n="auto_page_content_2">मढ़ियाँ</span>
                                                                 हैं।</p>
                                                         </div>
                                                     </div>
@@ -390,13 +448,13 @@
                                                             class="accordion-button collapsed"
                                                             data-bs-target="#collapse4" data-bs-toggle="collapse"
                                                             data-i18n="auto_key_144" type="button">
-                                                            Q4. कुंभ पर्व किन-किन स्थानों पर आयोजित होता है?
+                                                            Q4. <span data-i18n="auto_page_content_42">कुंभ पर्व</span> किन-किन स्थानों पर आयोजित होता है?
                                                         </button>
                                                     </h2>
                                                     <div aria-labelledby="heading4" class="accordion-collapse collapse"
                                                         data-bs-parent="#accordion" id="collapse4" role="region">
                                                         <div class="accordion-body">
-                                                            <p data-i18n="auto_key_145"> कुंभ पर्व चार स्थानों पर आयोजित
+                                                            <p data-i18n="auto_key_145"> <span data-i18n="auto_page_content_42">कुंभ पर्व</span> चार स्थानों पर आयोजित
                                                                 होता है— <br />
                                                                 1) हरिद्वार <br />
                                                                 2) प्रयाग <br />
@@ -467,7 +525,7 @@
                             <h5 data-i18n="auto_key_161"
                                 style="font-weight: 100; color: #eee; margin-top: 20px; text-align: justify;">आदि
                                 शंकराचार्य द्वारा स्थापित दशनामी शैव संन्यास परंपरा का एक प्रमुख अखाड़ा, जो सनातन धर्म,
-                                गुरु-शिष्य परंपरा एवं आध्यात्मिक संस्कृति के संरक्षण के लिए समर्पित है।</h5>
+                                <span data-i18n="auto_page_content_49">गुरु-शिष्य परंपरा</span> एवं आध्यात्मिक संस्कृति के संरक्षण के लिए समर्पित है।</h5>
                         </div>
                         <!-- Section Title End -->
                         <!-- फ़ुटर न्यूज़लैटर फॉर्म Start -->
@@ -510,13 +568,13 @@
                                 <li><a data-i18n="auto_key_165" href="index.html">मुखपृष्ठ</a></li>
                                 <li><a data-i18n="auto_key_166" href="about.html"> हमारे बारे में</a>
                                 </li>
-                                <li><a data-i18n="auto_key_3" href="ministries.html"> इतिहास</a></li>
-                                <li><a data-i18n="auto_key_42" href="sermons.html"> गुरु परंपरा</a>
+                                <li><a data-i18n="auto_key_3" href="#"> <span data-i18n="auto_page_content_39">इतिहास</span></a></li>
+                                <li><a data-i18n="auto_key_42" href="#"> <span data-i18n="auto_page_content_41">गुरु परंपरा</span></a>
                                 </li>
-                                <li><a data-i18n="auto_key_5" href="contact.html">
-                                        मढ़ियाँ</a></li>
+                                <li><a data-i18n="auto_key_5" href="#">
+                                        <span data-i18n="auto_page_content_2">मढ़ियाँ</span></a></li>
                                 <li><a data-i18n="auto_key_167" href="index.html"> शाखाएँ</a></li>
-                                <li><a data-i18n="auto_key_168" href="about.html"> कुंभ पर्व</a>
+                                <li><a data-i18n="auto_key_168" href="about.html"> <span data-i18n="auto_page_content_42">कुंभ पर्व</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -525,15 +583,15 @@
                         <div class="footer-links footer-service-links">
                             <h2 data-i18n="auto_key_169">Our Services</h2>
                             <ul>
-                                <li><a data-i18n="auto_key_170" href="service-single.html"> श्री गुरु निरंजन देव
+                                <li><a data-i18n="auto_key_170" href="#"> श्री गुरु निरंजन देव
                                         स्तुति</a></li>
-                                <li><a data-i18n="auto_key_171" href="service-single.html"> चार महावाक्य</a></li>
-                                <li><a data-i18n="auto_key_172" href="service-single.html"> सप्त मोक्षदायिनी पुरियाँ</a>
+                                <li><a data-i18n="auto_key_171" href="#"> चार महावाक्य</a></li>
+                                <li><a data-i18n="auto_key_172" href="#"> सप्त मोक्षदायिनी पुरियाँ</a>
                                 </li>
-                                <li><a data-i18n="auto_key_173" href="service-single.html"> द्वादश ज्योतिर्लिंग</a></li>
-                                <li><a data-i18n="auto_key_174" href="service-single.html"> गुरुकार्तिकेय स्तोत्र</a>
+                                <li><a data-i18n="auto_key_173" href="#"> द्वादश ज्योतिर्लिंग</a></li>
+                                <li><a data-i18n="auto_key_174" href="#"> गुरुकार्तिकेय स्तोत्र</a>
                                 </li>
-                                <li><a data-i18n="auto_key_175" href="service-single.html"> सप्त चिरंजीवी मंत्र</a></li>
+                                <li><a data-i18n="auto_key_175" href="#"> सप्त चिरंजीवी मंत्र</a></li>
                             </ul>
                         </div>
                         <!-- फ़ुटर Links ख़त्म -->
@@ -619,6 +677,7 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
 
+<script src="js/lang.js"></script>
 </body>
 
 </html>
